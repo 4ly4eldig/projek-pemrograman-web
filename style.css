@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body header {
+    font-family: 'Exo 2', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+main, aside {
+    font-family: 'Heebo', sans-serif;
+    padding: 20px;
+}
+
+table, figure {
+    text-align: left;
+    font-family: 'Heebo', sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+h1 {
+    color: #531667;
+    background-color: #8ff2ff;
+    font-weight: bold;
+}
+
+h2, h3 {
+    color: #0c0c12;
+    font-size: 150%;
+    text-align: center;
+    border-style: dashed;
+    background-color: #8ff2ff;
+}
+
+p {
+    text-align: justify;
+    line-height: 200%;
+}
+
+.paragraph {
+    padding: 30px;
+    font-size: 120%;
+}
+
+footer {
+    padding: 20px;
+    color: #531667;
+    background-color: #8ff2ff;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #e0584d
+}
+
+nav a:hover {
+    color:  #f5aca6;
+    text-decoration: underline;
+}
+   
+.featured-image {
+    height: auto;
+    max-width: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile {
+    height: 300px;
+    max-width: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 25px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.jumbotron {
+    font-size: 50px;
+    padding: 60px;
+    border: 4px dashed #0a0661;
+    text-align: center;
+    color: #531667;
+}
+
+nav ul {
+    padding-inline: 4px;
+    display: flex;
+    gap: 10px; 
+}
+
+nav li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav {
+    background-color: #e4fcff;
+    padding: 5px;
+    border: 4px dashed #0a0661;
+    margin: 0;
+
+    position: sticky;
+    top: 0;
+}
+
+.material article {
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    display: inline;
+}
+
+#content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px 10px;
+  }
+   
+aside {
+    flex: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    #content, aside {
+      width: 100%;
+      padding: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+   
+    main aside {
+      align-self: center;
+    }
+}
+   
+@media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    main aside {
+      align-self: stretch;
+    }
+}
